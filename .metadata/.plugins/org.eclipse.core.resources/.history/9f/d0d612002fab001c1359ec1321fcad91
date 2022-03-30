@@ -1,0 +1,40 @@
+package sec2;
+
+public class Example {
+
+	public static void main(String[] args) {
+		
+		// 1.
+		// 1) 조건문 : if, switch
+		// 2) 반복문 : for, while, do while
+		
+		// 2. 2)
+		
+		// 3. for문을 이용 1~100까지의 정수중 3의배수의 총합
+		int sum = 0;
+		for(int i = 0; i <= 100; i++) {
+			if(i % 3 == 0) {
+				sum += i;
+			}	
+		}
+		System.out.println("3의 배수의 합: " + sum);
+		
+		// 4. 주사위 눈의 합이 5가 아닌경우 계속 굴리고,
+		// 눈의 합이 5이면 멈추는 코드 작성
+		
+		// 5. 4x + 5y = 60의 모든해를 구해서 (x,y)형태로 출력
+		// 단, x,y는 10 이하의 자연수
+		
+		// 6. for문으로 삼각형 출력
+		for(int i = 1; i <= 5; i++) {
+			for(int j = 1; j <= 5; j++) {
+				System.out.println("*");
+			}
+			
+		}	
+		// 7. 
+		
+
+	}
+
+}

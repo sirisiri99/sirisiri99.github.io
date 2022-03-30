@@ -1,0 +1,30 @@
+package sec1;
+
+public class Array3 {
+	public static void main(String[] args) {
+		String[] names = {"이규진", "윤연실", "희야", "달리", "하악이"}; 
+		//5명의 3과목 점수 선언 jum[][] -> 2차원 배열 행(줄),열(칸)
+		int[][] jum = {{80,70,50}, {100,100,100}, {90,80,70}, {80,70,60}, {50,40,30}};
+		//전체총점(hap), 전체평균(py), 과목총점(tot), 과목평균(avg)
+		/*
+		 성명		국어		영어		수학 
+		 ---	---		---		---
+		 ---	---		---		---
+		 **************************
+		 총점		XX		XX		XX
+		 평균 	XX.X	XX.X	XX.X
+		 전체총점 : XXX	전체평균 : XX.X
+		 */
+		System.out.println("****************************");
+		System.out.println("성명\t국어\t영어\t수학");
+		System.out.println("****************************");
+		for(int i = 0; i < names.length; i++) {
+			System.out.print(names[i]);
+			for(int j = 0; j < 3; j++) {
+				System.out.println("\t" + jum[i][j]);
+			}
+			System.out.println();
+			
+		} 
+	}
+}

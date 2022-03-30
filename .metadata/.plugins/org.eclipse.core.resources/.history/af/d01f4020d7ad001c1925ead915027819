@@ -1,0 +1,17 @@
+package sec1;
+
+public class Array_Review {
+
+	public static void main(String[] args) {
+		
+		String [] arr1 = {"규진" , "시리", "희야", "달리"};
+		System.out.println(arr1[0]);
+		System.out.println(arr1[1]);
+		for(int i = 0; i < arr1.length; i++) {
+			System.out.println(arr1[i]);
+		}
+		
+
+	}
+
+}

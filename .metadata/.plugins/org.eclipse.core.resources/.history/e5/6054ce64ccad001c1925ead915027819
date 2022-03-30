@@ -1,0 +1,43 @@
+package sec1;
+
+public class Review {
+
+	public static void main(String[] args) {
+		
+		// 영어,수학,국어 점수 합계로 합격여부, 과목우수자, 학점을 계산
+		
+		int math = 80;
+		int korean = 90;
+		int english = 75;
+		String name = "이규진";
+		int tot = math + korean + english;
+		String pass = "불합격";
+		
+		if(tot >= 210) {
+			pass = "합격";
+		}
+		System.out.println("합격여부 : " + pass);
+		if(korean >= 80 && math >= 80 && english >= 80) {
+			System.out.println("장학생");
+		} else {
+			System.out.println("대상 아님");
+		}
+		if(korean >= 80 || math >= 80 || english >= 80) {
+			System.out.println("과목 우수자");
+		} else {
+			System.out.println("대상 아님");
+		}
+		if(tot >= 270) {
+			System.out.println("A+");
+		} else if(tot >= 240) {
+			System.out.println("A");
+		} else if(tot >= 210) {
+			System.out.println("B+");
+		} else if(tot >= 180) {
+			System.out.println("B");
+		} else {
+			System.out.println("낙제");
+		}
+	}
+
+}

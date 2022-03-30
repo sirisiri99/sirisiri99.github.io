@@ -1,0 +1,28 @@
+package sec1;
+
+import java.util.Scanner;
+
+public class Review {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int age;
+		float height;
+		String name;
+		
+		System.out.println("이름 입력 : ");
+		name = sc.next();
+		System.out.println("나이 입력 : ");
+		age = sc.nextInt();
+		System.out.println("키 입력 : ");
+		height = sc.nextFloat();
+		
+		System.out.println("나의 이름은" + name + "나이는" + age + "세 이며" + 
+		"키는" + height + "입니다");
+		
+		
+
+	}
+
+}
